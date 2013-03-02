@@ -1,0 +1,15 @@
+#!/bin/bash
+# Run the 4-thot application server and browse to the home page
+
+cd $p/app
+
+# Kill the old process
+killall node
+
+# Start the server
+rbg node app.js
+sleep 1
+
+# Show the web page
+w localhost:8084/
+
