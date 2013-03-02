@@ -1,0 +1,17 @@
+#!/bin/bash
+# Start working on the thot project
+
+export p=~/Projects/4-thot
+
+# Path
+export PATH=\
+$p/bin:\
+$PYTHONPATH:\
+/usr/bin:\
+/bin:\
+.
+
+figlet '4 - thot'
+
+cd $p
+
