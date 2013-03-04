@@ -39,11 +39,6 @@ var new_topic = function(title, action) {
      return {id:title,  child1:'Child 1', child2:'Child 2', child3:'Child 3', child4:'Child 4'}
 }
 
-// Lookup a topic
-var get_topic = function(title, action) {
-    read_file (title, action);
-}
-
 // Save the topic
 var save_topic = function(path, text, action) {
     write_file (path, text, function () {
@@ -61,7 +56,16 @@ var execute_file = function(command, action) {
 
 // Format a wiki page
 var find_text = function(doc, action) {
-    execute_file('grep -ih "'+doc+'" ../doc/*|sort -u', function(text) {
+    console.log('thot-find "%s"', doc)
+    execute_file('thot-find "'+doc+'"', function(text) {
+        action(text);
+    });
+}
+
+// Lookup a topic
+var get_topic = function(doc, action) {
+    console.log('thot-read "%s"', doc)
+    execute_file('thot-read "'+doc+'"',  function(text) {
         action(text);
     });
 }
