@@ -1,0 +1,30 @@
+3,9d2
+< # Changes not staged for commit:
+< #   (use "git add <file>..." to update what will be committed)
+< #   (use "git checkout -- <file>..." to discard changes in working directory)
+< #
+< #	modified:   bin/tdiff
+< #	modified:   bin/tfail
+< #
+13d5
+< #	test/docs.correct
+15d6
+< #	test/files.correct
+17,31c8
+< #	test/git.correct
+< #	test/git.diff
+< #	test/hammer-execute.correct
+< #	test/hammer-execute.diff
+< #	test/hammer-list.correct
+< #	test/hammer-list.diff
+< #	test/hammer-read.correct
+< #	test/hammer-read.diff
+< #	test/hammer-show.correct
+< #	test/hammer-show.diff
+< #	test/hammer-wiki.correct
+< #	test/hammer-wiki.diff
+< #	test/hammer-write.correct
+< #	test/hammer-write.diff
+< no changes added to commit (use "git add" and/or "git commit -a")
+---
+> nothing added to commit but untracked files present (use "git add" to track)
