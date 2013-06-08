@@ -1,0 +1,17 @@
+#!/bin/bash
+# List the failed tests
+
+
+cd $p/test
+{
+# Visit each test
+    for f in *.tst
+    do 
+        f=${f/.tst/}
+        difference=`diff $f.out $f.correct`
+        [[ ! -z "$difference" ]] && echo FAILED: $f
+    done
+} | tee fail
+
+echo `wc -l  fail` tests failed
+rm fail
