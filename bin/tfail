@@ -4,12 +4,9 @@
 
 cd $p/test
 {
-# Visit each test
     for f in *.tst
     do 
-        f=${f/.tst/}
-        difference=`diff $f.out $f.correct`
-        [[ ! -z "$difference" ]] && echo FAILED: $f
+        [[ ! -z `tdiff $f` ]] && echo FAILED: ${f/.tst/}
     done
 } | tee fail
 

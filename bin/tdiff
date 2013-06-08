@@ -6,6 +6,10 @@ cd $p/test
 
 f=${1/.tst/}
 t=$f.tmp
-grep -v 'Results from' < $f.out >$t 
-diff $t $f.correct | tee $f.diff
-rm $t
+
+# Accept any result the first time
+[[ ! -f $f.correct ]] && cp $f.out $f.correct
+
+# Show differences from actual to expected results
+diff $f.out $f.correct | tee $f.diff 
+
