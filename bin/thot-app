@@ -2,5 +2,15 @@
 # Show the pipe scan home page
 echo 'Show the 4-thot app in a browser'
 
-~/Projects/4-thot/app/run
+cd ~/Projects/4-thot/app
+
+# Kill the old process
+killall node
+
+# Start the server
+rbg node app.js
+sleep 1
+
+# Show the web page
+w localhost:8084/
 
