@@ -1,4 +1,4 @@
-4-thot
-======
+JackHammer
+==========
 
-A new way of thinking - organize your ideas for better clarity.
+Micro-project framework 
