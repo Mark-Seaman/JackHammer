@@ -8,6 +8,11 @@ Provides:
  * instance code sharing
  * extensible custom commands
 
+ProjectContext
+AutomatedTests
+ProjectSetup
+PersonalizedCommands
+DataTypeFactory
 
 **rapid context switch**
 

@@ -11,10 +11,11 @@ d='Index'
 [[ -d "$pd/$d" ]]       && 
 if [[ -f "$pd/$d/Index" ]] 
 then
-    hammer-wiki < "$pd/$d/Index" && exit 0
+    hammer-wiki < "$pd/$d/Index" && 
+    exit 0
 else
-    hammer-list "$1"        | 
-    hammer-wiki             && 
+    hammer-list "$1"    | 
+    hammer-wiki         && 
     exit 0
 fi
 
@@ -25,7 +26,7 @@ exit 0
 
 # Handle missing page
 [[ ! -f "$pd/$d" ]]     && 
-echo "Missing page $d"  && 
+hammer-add $d           && 
 exit 0
 
 #Formatter is written in python
