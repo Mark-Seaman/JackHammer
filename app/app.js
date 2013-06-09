@@ -64,7 +64,7 @@ app.get('*', function(req, res){
     res.redirect ('/Home')
 });
 
-// Listen on 8080
-var port = 8080;
+// Listen on 8081
+var port = 8081;
 server.listen(port);
 console.log('Listening on port ' + port);
