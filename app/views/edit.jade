@@ -1,27 +1,17 @@
 extends layout
 
 block title
-  title Edit #{text[0]}
+  title Edit #{doc}
 
 block content
+  h1 Edit: #{doc}
 
-  form(method="post", action="/save")
-    style input{width:90%}
-    h1 Topic
-    input(name='id',   type='text', value='#{text[0]}') 
-    h2 Subtopics
-    ul 
-      li 
-        input(name='child1', type='text', value='#{text[1]}') 
-      li
-        input(name='child2', type='text', value='#{text[2]}') 
-      li
-        input(name='child3', type='text', value='#{text[3]}') 
-      li
-        input(name='child4', type='text', value='#{text[4]}') 
+  form(method="post", action="/#{doc}/edit")
+    p Doc:
+      input(name='doc', type='text', value='#{doc}') 
     p
-      center
-        button(class="btn btn-large btn-primary", type="submit", value="Save") Save 
-        x= '&nbsp; &nbsp; &nbsp;'
-        button(class="btn btn-large", type="cancel", value="Cancel",  name="cancel") Cancel
-
+      style textarea{height:400px; width:90%}
+      textarea(name='text',type='text',rows="4",cols="50") #{text}
+    p
+      button(type="submit", value="Save") Save
+      button(type="cancel", value="Cancel",  name="cancel") Cancel

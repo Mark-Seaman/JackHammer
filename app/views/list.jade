@@ -4,10 +4,13 @@ block title
   title List
 
 block content
+    p 
+      a(href='/new') Add
+    hr  
+    h1  List
     ul
       - for (var id in files)
         - var f = files[id]
           li
-            p 
-              a(href='/#{f}') #{f}
+            a(href='/#{f}') #{f}
         

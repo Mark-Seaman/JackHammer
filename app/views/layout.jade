@@ -3,7 +3,7 @@ html(lang="en")
   head
 
     block title
-      title 4 thot
+      title My Notes
 
     block scripts
 
@@ -15,20 +15,6 @@ html(lang="en")
       script(src="/views/bootstrap.min.js")
  
   body(style="margin:3em")
-
-    center 
-      h1
-        span(style='color:green') 4
-        span(style='color:red') -
-        span(style='color:blue') thot
-      p
-        a(href='/') All thots
-        x!=  '&nbsp; &nbsp; &nbsp; &nbsp;'
-        a(href='/new') Add
-        x!=  '&nbsp; &nbsp; &nbsp; &nbsp;'
-        a(href='/find') Find
-
-    hr
-
+    h1 My Notes
     block content
       h1 no block content available

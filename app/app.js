@@ -1,16 +1,17 @@
-var express = require('express');
-var http    = require('http');
-var app     = express();
-var server  = http.createServer(app);
+// System requirements
+var express    = require('express');
+var app        = express();
+var http       = require('http');
+var server     = http.createServer(app);
+var files      = require('./files');
 
-var files   = require('./files');
 
+// Setup environment
 app.set('view engine', 'jade');
-app.set('view options', { layout: false });
-app.set('views', __dirname+'/views');
+app.set('view options', { layout: true });
+app.set('views',        __dirname+'/views');
 
 app.use(express.bodyParser()); // Automatically parses form data
-
 
 //-----------------------------------------------------------------------------
 // Static files
@@ -22,56 +23,48 @@ app.get('/views/*?:file?', function(req, res){
     res.sendfile ('views/'+req.params.file);
 });
 
-//-----------------------------------------------------------------------------
-// Find view
-app.get('/find', function(req, res) {
-    res.render ('find', { text:[ 'thing 1', 'thing 2'] })
-});
-
-app.post('/find', function(req, res){
-    path = req.body.id;
-    if (req.param('cancel')) return res.redirect ('/'); 
-    files.find (path, function (data) { res.render('find', data) })
-});
 
 
-//-----------------------------------------------------------------------------
 // Edit view
-app.get('/:id/edit', function(req, res) {
-    files.get(req.params.id, function (data) { res.render ('edit', data) })
+app.get('/*:doc?/edit', function(req, res) {
+    doc = req.params.doc;
+    files.read (doc, function (text) { 
+        res.render ('edit', {doc:doc, text:text} ); 
+    });
+});
+app.post('/*:doc?/edit', function(req, res){
+    doc = req.body.doc;
+    text = req.body.text.replace(/\r/gm,'');
+    if (req.param('cancel')) return res.redirect ('/'+doc); 
+    files.write (doc, text, function () {
+        res.redirect ('/'+doc); 
+    });
 });
 
 
-// New view
-app.get('/new', function(req, res) {
-    res.render ('edit', files.new()); 
-});
-
-// Save view
-app.post('/save', function(req, res){
-    path = req.body.id;
-    if (req.param('cancel')) return res.redirect ('/'+path); 
-    c1   = req.body.child1;
-    c2   = req.body.child2;
-    c3   = req.body.child3;
-    c4   = req.body.child4;
-    text = path+'\n'+ c1+'\n'+c2+'\n'+c3+'\n'+c4+'\n';
-    files.put (path, text, function () { res.redirect ('/'+path) })
-});
-
-//-----------------------------------------------------------------------------
-
-// List view
+// Format a document
 app.get('/', function(req, res){
-    files.list ('.', function (data) { res.render ('list', data) })
+    res.redirect('/Index');
+});
+app.get('/:doc?/', function(req, res){
+    res.redirect(req.params.doc+'/Index');
+});
+app.get('/*:doc?', function(req, res){
+    doc = req.params.doc;
+    files.format(doc, 
+                 function(text) { res.render('show',{doc:doc, text:text}) },   
+                 function()     { res.send ('Doc Error')}
+                )
 });
 
-// Detail view
-app.get('/:id', function(req, res) {
-    files.get (req.params.id, function (data) { res.render ('detail',  data) })
+
+// Missing page
+app.get('*', function(req, res){
+    console.log("Page:"+req.url)
+    res.redirect ('/Home')
 });
 
-
-var port = 8084;
+// Listen on 8080
+var port = 8080;
 server.listen(port);
 console.log('Listening on port ' + port);
