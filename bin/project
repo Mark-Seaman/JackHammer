@@ -2,7 +2,7 @@
 # Start working on the simple project
 
 # Vars
-export p=~/Projects/4-thot
+export p=~/Projects/JackHammer
 export ph=$joy
 export pa=$p/app
 export pb=$p/bin
@@ -28,7 +28,7 @@ $pt:\
 
 # Show the banner
 reset
-figlet '4 - thot'
+figlet 'Jack Hammer'
 
 # Directory
 cd $p
