@@ -25,6 +25,7 @@ hammer-read
 hammer-show
 hammer-wiki
 hammer-write
+mkexe
 project
 rbg
 run
