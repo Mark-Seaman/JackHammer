@@ -1,23 +1,23 @@
-/home/seaman/Projects/4-thot/README.md
+/home/seaman/Projects/jack-hammer/README.md
 
-/home/seaman/Projects/4-thot:
+/home/seaman/Projects/jack-hammer:
 app
 bin
 doc
 README.md
 test
 
-/home/seaman/Projects/4-thot/app:
+/home/seaman/Projects/jack-hammer/app:
 app.js
 files.js
 node_modules
-README.md
 test-app.js
 thot.js
 views
 
-/home/seaman/Projects/4-thot/bin:
+/home/seaman/Projects/jack-hammer/bin:
 e
+hammer-add
 hammer-edit
 hammer-execute
 hammer-list
@@ -51,38 +51,13 @@ tst
 w
 wiki-html-content
 
-/home/seaman/Projects/4-thot/doc:
-4-thot data
-4-thot defects
-4-thot design
-4-thot views
-About 4-thot application
-Activities
-Build
-Business learning
-Career goals
-Company growth
-Completed features in 4-thot
-Contact me
-Exploration projects
-Features needed in 4-thot
-Four-stroke development
-Grow
-Learn
-Life goals
-Mark Seaman
-Monthly objectives
-People
-Plan
-Profile
-Project
-Teach
-thot login and security
-Time tracking
-Today
-Work
+/home/seaman/Projects/jack-hammer/doc:
+AutomatedTests
+Index
+ProjectContext
+ProjectSetup
 
-/home/seaman/Projects/4-thot/test:
+/home/seaman/Projects/jack-hammer/test:
 app.log
 data
 docs.correct
