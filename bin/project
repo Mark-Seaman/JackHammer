@@ -2,7 +2,7 @@
 # Start working on the simple project
 
 # Vars
-export p=~/Projects/JackHammer
+export p=~/Projects/jack-hammer
 export ph=$joy
 export pa=$p/app
 export pb=$p/bin
