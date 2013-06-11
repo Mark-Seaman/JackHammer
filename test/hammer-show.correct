@@ -152,37 +152,13 @@ hammer-show Index
 <br/> 
 
 hammer-show __App__/Index
-__App__/Index
-/home/seaman/Projects/jack-hammer/doc/__App__/Index
-xxx
-<br/> <h1>Missing page</h1>
-<br/> [[__App__/Index/edit][Create page __App__/Index]]
-<br/> 
-<br/> 
+Missing page __App__/Index
 
 hammer-show __App__
-__App__
-/home/seaman/Projects/jack-hammer/doc/__App__
-xxx
-<br/> <h1>Missing page</h1>
-<br/>  <a href="__App__/edit">Create page __App__</a> 
-<br/> 
-<br/> 
+Missing page __App__
 
 hammer-show seaman1
-seaman1
-/home/seaman/Projects/jack-hammer/doc/seaman1
-xxx
-<br/> <h1>Missing page</h1>
-<br/>  <a href="seaman1/edit">Create page seaman1</a> 
-<br/> 
-<br/> 
+Missing page seaman1
 
 hammer-show seaman1/Index
-seaman1/Index
-/home/seaman/Projects/jack-hammer/doc/seaman1/Index
-xxx
-<br/> <h1>Missing page</h1>
-<br/> [[seaman1/Index/edit][Create page seaman1/Index]]
-<br/> 
-<br/> 
+Missing page seaman1/Index
