@@ -5,6 +5,7 @@ lib-cov
 *.log
 *.csv
 *.dat
+*.like
 *.out
 *.pid
 *.gz
