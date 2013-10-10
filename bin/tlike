@@ -1,14 +1,11 @@
 #!/bin/bash
 # Accept the currect results as the correct answer
 
-# Remove .tst suffix
+# Choose the correct directory
+cd $p
+[[ -d test ]] && cd test
 f=${1/\.tst/}   
 echo Accept results from $f.tst
-
-# Filter the output
-[ -x $f.filter   ] && $f.filter < $f.out > $f.correct
-[ ! -x $f.filter ] && cp $f.out $f.correct
-
-rm -f $f.like
-rm -f $f.diff
+cp $f.out $f.correct
+rm $f.diff
 touch $f.diff

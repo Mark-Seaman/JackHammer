@@ -11,7 +11,8 @@ echo "No test found, $f.tst" &&
 exit 0
 
 t=/tmp/trun$$
-$f.tst > $t
+echo -n "Running test ... $f ... "
+$p/bin/elapsed "$f.tst > $t"
 
 # Display the output
 [ -x $f.display   ] && $f.display < $t > $f.out

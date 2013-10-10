@@ -22,6 +22,7 @@ views
 commit
 create
 e
+elapsed
 hammer-add
 hammer-edit
 hammer-execute
