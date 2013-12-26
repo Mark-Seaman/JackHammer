@@ -21,6 +21,8 @@ views
 /home/seaman/Projects/jack-hammer/bin:
 commit
 create
+doc-pull
+doc-push
 e
 elapsed
 hammer-add
