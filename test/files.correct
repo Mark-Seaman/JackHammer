@@ -31,6 +31,7 @@ hammer-execute
 hammer-list
 hammer-read
 hammer-show
+hammer-tabs
 hammer-wiki
 hammer-write
 lc
@@ -74,8 +75,6 @@ files.correct
 files.tst
 git.correct
 git.tst
-hammer-execute.correct
-hammer-execute.tst
 hammer-show.correct
 hammer-show.tst
 hammer-wiki.correct
