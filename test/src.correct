@@ -1,5 +1,7 @@
 bin/commit
 bin/create
+bin/doc-pull
+bin/doc-push
 bin/e
 bin/elapsed
 bin/hammer-add
