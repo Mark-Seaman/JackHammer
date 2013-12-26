@@ -1,164 +1,21 @@
+* Test User Home *
+This is a test page for the test user.
 
-hammer-show
-<br/> <h1>Jack Hammer</h1>
-<br/> 
-<br/> Framework for microprojects
-<br/> 
-<br/> Provides:
-<ul><li>rapid context switch</li></ul>
-<ul><li>automatic test framework</li></ul>
-<ul><li>instance code sharing</li></ul>
-<ul><li>extensible custom commands</li></ul>
-<br/> 
-<br/>  <a href="ProjectContext">ProjectContext</a> 
-<br/>  <a href="AutomatedTests">AutomatedTests</a> 
-<br/>  <a href="ProjectSetup">ProjectSetup</a> 
-<br/>  <a href="PersonalizedCommands">PersonalizedCommands</a> 
-<br/>  <a href="DataTypeFactory">DataTypeFactory</a> 
-<br/> 
-<br/> <b>rapid context switch</b>
-<br/> 
-<br/> A single command sets root directory, command path, and variables
-<br/> All commands relate to the current project
-<br/> 5 second context
-<br/> 
-<ul><li>project</li></ul>
-<ul><li>run</li></ul>
-<ul><li>dirs</li></ul>
-<br/> 
-<br/> 
-<br/> <b>automatic test framework</b>
-<br/> 
-<br/> Command run all available tests
-<br/> Creating, running, and viewing test results
-<br/> 
-<ul><li>tst, trun, tfail, tresults</li></ul>
-<ul><li>tout, tdiff, tlike</li></ul>
-<ul><li>tnew, tshow, tlist, te</li></ul>
-<br/> 
-<br/> 
-<br/> <b>instant project setup</b>
-<br/> 
-<br/> Create new archive and directory structure
-<br/> Clone command for new project
-<br/> 
-<ul><li>commit</li></ul>
-<ul><li>changes</li></ul>
-<ul><li>create</li></ul>
-<ul><li>clone</li></ul>
-<ul><li>proot, pbin, ptest, pdoc, papp</li></ul>
-<br/> 
-<br/> 
-<br/> <b>extensible custom commands</b>
-<br/> 
-<br/> Create and modify project related commands
-<br/> Instant access for all scripts
-<br/> 
-<ul><li>show</li></ul>
-<ul><li>ew</li></ul>
-<ul><li>todo</li></ul>
-<ul><li>exe</li></ul>
-<br/> 
-<br/> 
-<br/> <b>data type factory</b>
-<br/> 
-<br/> Support any data type by creating canonical operations
-<br/> 
-<ul><li>factory</li></ul>
-<ul><li>list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l</li></ul>
-<ul><li>detail&nbsp;&nbsp;&nbsp;&nbsp;   s</li></ul>
-<ul><li>edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e</li></ul>
-<ul><li>new&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  n</li></ul>
-<ul><li>delete&nbsp;&nbsp;&nbsp;&nbsp;   d</li></ul>
-<br/> 
-<br/> 
-<br/> See also   <a href="HammerTutorial">HammerTutorial</a> 
-<br/> 
+**Tab 1**
+ This is some text
 
-hammer-show Index
-<br/> <h1>Jack Hammer</h1>
-<br/> 
-<br/> Framework for microprojects
-<br/> 
-<br/> Provides:
-<ul><li>rapid context switch</li></ul>
-<ul><li>automatic test framework</li></ul>
-<ul><li>instance code sharing</li></ul>
-<ul><li>extensible custom commands</li></ul>
-<br/> 
-<br/>  <a href="ProjectContext">ProjectContext</a> 
-<br/>  <a href="AutomatedTests">AutomatedTests</a> 
-<br/>  <a href="ProjectSetup">ProjectSetup</a> 
-<br/>  <a href="PersonalizedCommands">PersonalizedCommands</a> 
-<br/>  <a href="DataTypeFactory">DataTypeFactory</a> 
-<br/> 
-<br/> <b>rapid context switch</b>
-<br/> 
-<br/> A single command sets root directory, command path, and variables
-<br/> All commands relate to the current project
-<br/> 5 second context
-<br/> 
-<ul><li>project</li></ul>
-<ul><li>run</li></ul>
-<ul><li>dirs</li></ul>
-<br/> 
-<br/> 
-<br/> <b>automatic test framework</b>
-<br/> 
-<br/> Command run all available tests
-<br/> Creating, running, and viewing test results
-<br/> 
-<ul><li>tst, trun, tfail, tresults</li></ul>
-<ul><li>tout, tdiff, tlike</li></ul>
-<ul><li>tnew, tshow, tlist, te</li></ul>
-<br/> 
-<br/> 
-<br/> <b>instant project setup</b>
-<br/> 
-<br/> Create new archive and directory structure
-<br/> Clone command for new project
-<br/> 
-<ul><li>commit</li></ul>
-<ul><li>changes</li></ul>
-<ul><li>create</li></ul>
-<ul><li>clone</li></ul>
-<ul><li>proot, pbin, ptest, pdoc, papp</li></ul>
-<br/> 
-<br/> 
-<br/> <b>extensible custom commands</b>
-<br/> 
-<br/> Create and modify project related commands
-<br/> Instant access for all scripts
-<br/> 
-<ul><li>show</li></ul>
-<ul><li>ew</li></ul>
-<ul><li>todo</li></ul>
-<ul><li>exe</li></ul>
-<br/> 
-<br/> 
-<br/> <b>data type factory</b>
-<br/> 
-<br/> Support any data type by creating canonical operations
-<br/> 
-<ul><li>factory</li></ul>
-<ul><li>list&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; l</li></ul>
-<ul><li>detail&nbsp;&nbsp;&nbsp;&nbsp;   s</li></ul>
-<ul><li>edit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e</li></ul>
-<ul><li>new&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  n</li></ul>
-<ul><li>delete&nbsp;&nbsp;&nbsp;&nbsp;   d</li></ul>
-<br/> 
-<br/> 
-<br/> See also   <a href="HammerTutorial">HammerTutorial</a> 
-<br/> 
+**Tab 2**
 
-hammer-show __App__/Index
-Missing page __App__/Index
-
-hammer-show __App__
-Missing page __App__
-
-hammer-show seaman1
-Missing page seaman1
-
-hammer-show seaman1/Index
-Missing page seaman1/Index
+This is some more text
+ 
+<br/> <h1>Test User Home</h1>
+<br/> This is a test page for the test user.
+<br/> 
+<br/> <b>Tab 1</b>
+<br/>  This is some text
+<br/> 
+<br/> <b>Tab 2</b>
+<br/> 
+<br/> This is some more text
+<br/> 
+<br/> 

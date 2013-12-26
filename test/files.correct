@@ -62,6 +62,7 @@ AutomatedTests
 Index
 ProjectContext
 ProjectSetup
+test
 ToDo
 
 /home/seaman/Projects/jack-hammer/test:
@@ -75,10 +76,6 @@ git.correct
 git.tst
 hammer-execute.correct
 hammer-execute.tst
-hammer-list.correct
-hammer-list.tst
-hammer-read.correct
-hammer-read.tst
 hammer-show.correct
 hammer-show.tst
 hammer-wiki.correct
