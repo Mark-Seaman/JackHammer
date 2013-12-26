@@ -39,6 +39,7 @@ rbg
 rmas
 run
 show
+src-jack
 tdiff
 te
 tfail
@@ -82,3 +83,5 @@ hammer-wiki.correct
 hammer-wiki.tst
 hammer-write.correct
 hammer-write.tst
+src.correct
+src.tst
