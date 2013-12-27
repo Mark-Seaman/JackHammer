@@ -29,4 +29,3 @@ bin/wiki.pyc
 test/docs.tst
 test/files.tst
 test/git.tst
-test/src.tst
