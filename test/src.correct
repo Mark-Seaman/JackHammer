@@ -1,5 +1,7 @@
 bin/commit
 bin/create
+bin/doc-diff
+bin/doc-diff-all
 bin/doc-pull
 bin/doc-push
 bin/elapsed
