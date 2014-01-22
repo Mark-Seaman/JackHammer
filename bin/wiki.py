@@ -222,7 +222,6 @@ def print_all_tabs(text, format_lines=False, path=None):
     '''
     Print all the tabs of text from the file
     '''
-
     tab_groups = group_tabs(text)
     print convert_html(text.split('**')[0].split('\n'),path)
     if len(tab_groups)>1:
@@ -301,76 +300,3 @@ def read_text(f):
         if  exists(f+'/Index'):
             return open(f+'/Index').read()
     return 'No file found, '+f
-
-
-def domain_map():
-    '''
-    Read the domain mapping from a file
-    '''
-    map = {}
-    for d in open(join(environ['pd'],'Domains')).read().split('\n'):
-        d = d.split(' ')
-        if len(d)==2:
-            map[d[0]] = d[1]
-    return map
-
-
-def doc_path(path):
-    '''
-    Convert a url to a directory
-    '''
-    m = domain_map()
-
-    domain = path[0]
-    if m.has_key(domain):
-        domain = m[domain]
-    else:
-        domain = '.'
-
-    if len(path)>1:
-        user = path[1].replace('Anonymous', 'Public')
-    else:
-        user = 'Public'
-
-    file = path[2:]
-    return '/'.join([user,domain] + file).replace('/./','/')
-
-
-def do_command(cmd, input=None):
-    '''
-    Run the command as a process and capture stdout & print it
-    '''
-    try:
-        if input:
-            p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE)
-            p.stdin.write(input)
-            p.stdin.close()
-        else:
-            p = Popen(cmd.split(), stdout=PIPE)
-            return  p.stdout.read()
-    except:
-        return '<h1>Command Error</h1>'+\
-            '<p>An error occurred while trying to execute the command:</p>'+\
-            '<p>COMMAND: %s</p>'%cmd +\
-            '<p>INPUT: %s</p>'%input
-
-
-def print_page_html():
-    '''
-    Create html file contents from stdin
-    '''
-    text = stdin.read() 
-    print_all_tabs(text)
-    #print '\n'.join(lines)
-
-
-def show_doc():
-    path   = ['','']
-    if len(argv)>1: 
-        path = argv[1].split('/')
-
-    doc = join(environ['pd'], doc_path(path))
-    #print 'doc:', doc
-    log_page(doc)
-    text = read_text(doc)
-    print_all_tabs(text,doc)

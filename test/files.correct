@@ -21,7 +21,6 @@ views
 /home/seaman/Projects/jack-hammer/bin:
 commit
 create
-doc-diff
 doc-diff-all
 doc-pull
 doc-push
@@ -45,15 +44,11 @@ rmas
 run
 show
 src-jack
-tdiff
 te
 tfail
-tlike
 tlist
-tmklike
 tnew
 todo
-tout
 tresults
 trun
 tshow
