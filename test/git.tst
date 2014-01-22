@@ -1,6 +1,5 @@
 #!/bin/bash
-# Test the checked out files
+# Ensure that files are committed
 
-cd $p
-echo $p | sed 's/seaman\/Projects\///'
-git status
+git status | grep -v 'nothing to commit'
+
