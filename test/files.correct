@@ -26,6 +26,7 @@ doc-pull
 doc-push
 e
 elapsed
+filter-path
 hammer-add
 hammer-edit
 hammer-execute
