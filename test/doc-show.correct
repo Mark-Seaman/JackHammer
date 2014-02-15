@@ -1,0 +1,3 @@
+usage: doc-show doc
+<br/> My new doc
+redirect:test/Index/missing
