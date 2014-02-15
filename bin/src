@@ -1,6 +1,9 @@
 #!/bin/bash
 # List all the source code
 
+{
 cd $p
-find | grep -v '.git\|node_modules' | sort
+find bin
+find test -name '*.tst' 
+} | sort
 
