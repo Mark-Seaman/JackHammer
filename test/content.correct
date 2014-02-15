@@ -1,0 +1,5 @@
+redirect:localhost:8052/Public/missing
+redirect:localhost:8052/Public/Index/missing
+redirect:localhost:8052/seaman/missing
+redirect:localhost:8052/seaman/Index/missing
+redirect:localhost:8052/seaman/BizPlan/missing

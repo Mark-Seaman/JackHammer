@@ -4,6 +4,7 @@ bin/doc-diff
 bin/doc-diff-all
 bin/doc-pull
 bin/doc-push
+bin/doc-show
 bin/elapsed
 bin/filter-path
 bin/lc
@@ -12,6 +13,7 @@ bin/range
 bin/rbg
 bin/rmas
 bin/show
+bin/src
 bin/src-jack
 bin/tdiff
 bin/te
@@ -26,6 +28,16 @@ bin/trun
 bin/tshow
 bin/tst
 bin/wiki.py
+
+bin/util:
+doc.py
+domain.py
+files.py
+hammer.py
+__init__.py
+tabs.py
+wiki.py
+test/content.tst
 test/docs.tst
 test/files.tst
 test/git.tst
