@@ -4,19 +4,10 @@ Git libpeerconnection files
 /home/seaman/Projects/jack-hammer/README.md
 
 /home/seaman/Projects/jack-hammer:
-app
 bin
 doc
 README.md
 test
-
-/home/seaman/Projects/jack-hammer/app:
-app.js
-files.js
-node_modules
-test-app.js
-thot.js
-views
 
 /home/seaman/Projects/jack-hammer/bin:
 commit
