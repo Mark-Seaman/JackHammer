@@ -1,4 +1,3 @@
-bin
 bin/commit
 bin/create
 bin/doc-diff
@@ -17,7 +16,6 @@ bin/project
 bin/range
 bin/rbg
 bin/rmas
-bin/run
 bin/show
 bin/src
 bin/tdiff
@@ -34,18 +32,16 @@ bin/trun
 bin/tshow
 bin/tst
 bin/util
+bin/util/date.py
 bin/util/doc.py
-bin/util/doc.pyc
 bin/util/domain.py
 bin/util/files.py
-bin/util/files.pyc
 bin/util/hammer.py
 bin/util/__init__.py
-bin/util/__init__.pyc
+bin/util/list.py
+bin/util/table.py
 bin/util/tabs.py
-bin/util/tabs.pyc
 bin/util/wiki.py
-bin/util/wiki.pyc
 test/content.tst
 test/doc-get.tst
 test/doc-put.tst
@@ -54,3 +50,4 @@ test/docs.tst
 test/files.tst
 test/git.tst
 test/src.tst
+test/update.tst
