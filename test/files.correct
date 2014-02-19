@@ -27,7 +27,6 @@ project
 range
 rbg
 rmas
-run
 show
 src
 te
@@ -67,3 +66,5 @@ git.correct
 git.tst
 src.correct
 src.tst
+update.correct
+update.tst
