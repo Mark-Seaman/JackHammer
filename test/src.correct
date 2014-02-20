@@ -37,7 +37,6 @@ bin/util/date.py
 bin/util/doc.py
 bin/util/domain.py
 bin/util/files.py
-bin/util/hammer.py
 bin/util/__init__.py
 bin/util/list.py
 bin/util/table.py
