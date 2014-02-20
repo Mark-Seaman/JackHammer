@@ -44,8 +44,6 @@ bin/util/table.py
 bin/util/tabs.py
 bin/util/wiki.py
 test/content.tst
-test/doc-get.tst
-test/doc-put.tst
 test/docs.tst
 test/files.tst
 test/git.tst
