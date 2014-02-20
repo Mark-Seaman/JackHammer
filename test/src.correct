@@ -5,9 +5,11 @@ bin/create
 bin/doc-diff
 bin/doc-diff-all
 bin/doc-get
+bin/doc-page
 bin/doc-pull
 bin/doc-push
 bin/doc-put
+bin/doc-redirect
 bin/doc-show
 bin/e
 bin/elapsed

@@ -15,9 +15,11 @@ commit
 create
 doc-diff-all
 doc-get
+doc-page
 doc-pull
 doc-push
 doc-put
+doc-redirect
 doc-show
 e
 elapsed
