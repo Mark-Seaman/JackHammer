@@ -55,14 +55,8 @@ ToDo
 user
 
 /home/seaman/Projects/jack-hammer/test:
-app.log
 content.correct
 content.tst
-data
-doc-get.correct
-doc-get.tst
-doc-put.correct
-doc-put.tst
 docs.correct
 docs.tst
 files.correct
