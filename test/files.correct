@@ -6,6 +6,7 @@ Git libpeerconnection files
 /home/seaman/Projects/jack-hammer:
 bin
 doc
+logs
 README.md
 test
 
@@ -42,10 +43,16 @@ util
 
 /home/seaman/Projects/jack-hammer/doc:
 AutomatedTests
+Domains
 Index
 ProjectContext
 ProjectSetup
+Public
+test
 ToDo
+
+/home/seaman/Projects/jack-hammer/logs:
+user
 
 /home/seaman/Projects/jack-hammer/test:
 app.log
@@ -57,8 +64,6 @@ doc-get.tst
 doc-put.correct
 doc-put.tst
 docs.correct
-doc-show.correct
-doc-show.tst
 docs.tst
 files.correct
 files.tst

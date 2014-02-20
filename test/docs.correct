@@ -1,6 +1,10 @@
 .
 ./AutomatedTests
+./Domains
 ./Index
 ./ProjectContext
 ./ProjectSetup
+./Public
+./Public/test
+./test
 ./ToDo

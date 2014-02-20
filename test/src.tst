@@ -3,8 +3,4 @@
 
 echo
 echo 'Jack Hammer Source:'
-src-jack
-
-echo
-echo 'Django Hammer Source:'
-src-django
+src
