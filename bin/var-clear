@@ -1,0 +1,6 @@
+#!/bin/bash
+# Clear the system vars
+
+rm    $p/pipedata/ramdisk/vars-data
+touch $p/pipedata/ramdisk/vars-data
+
