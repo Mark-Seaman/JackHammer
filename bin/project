@@ -16,6 +16,7 @@ alias pbin="cd $pb"
 alias pdoc="cd $pd"
 alias ptest="cd $pt"
 alias tres='tresults'
+alias s='search'
 
 # Path
 export PATH=\
