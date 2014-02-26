@@ -1,5 +1,6 @@
 
 Jack Hammer Source:
+bin/cache
 bin/commit
 bin/create
 bin/doc-diff
@@ -20,6 +21,7 @@ bin/project
 bin/range
 bin/rbg
 bin/rmas
+bin/search
 bin/show
 bin/src
 bin/tdiff
@@ -43,6 +45,7 @@ bin/util/__init__.py
 bin/util/list.py
 bin/util/table.py
 bin/util/tabs.py
+bin/util/vars.py
 bin/util/wiki.py
 test/content.tst
 test/docs.tst

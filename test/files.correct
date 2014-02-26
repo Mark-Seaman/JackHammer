@@ -11,6 +11,7 @@ README.md
 test
 
 /home/seaman/Projects/jack-hammer/bin:
+cache
 commit
 create
 doc-diff-all
@@ -30,6 +31,7 @@ project
 range
 rbg
 rmas
+search
 show
 src
 te
