@@ -4,15 +4,22 @@
 from sys import stdin, argv
 from os  import environ, path
 from json import dumps, loads
+from os.path import exists
 
 
 # Global state cache
 vars = {}
 
+# File to save
+var_file = environ['p']+'/pipedata/ramdisk/vars-data'
+if not exists(var_file):
+    var_file = environ['pd']+'/vars-data'
+
+
 # Save vars in a named file
 def save_all_vars(file=None):
     if not file:
-        file = environ['p']+'/pipedata/ramdisk/vars-data'
+        file = var_file
     f = open(file,'w')
     for v in sorted(vars):
         f.write('%s = %s\n' % (v,vars[v]))
@@ -22,7 +29,7 @@ def save_all_vars(file=None):
 def read_all_vars(file=None):
     global vars
     if not file:
-        file = environ['p']+'/pipedata/ramdisk/vars-data'
+        file = var_file
     if not path.exists(file): return
     text  = open(file).read()
     lines = text.split('\n')

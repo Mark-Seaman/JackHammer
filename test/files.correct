@@ -44,6 +44,15 @@ trun
 tshow
 tst
 util
+var-clear
+var-get
+var-list
+var-read
+var-save
+vars-edit
+var-set
+vars-show
+var-write
 
 /home/seaman/Projects/jack-hammer/doc:
 AutomatedTests
@@ -54,6 +63,7 @@ ProjectSetup
 Public
 test
 ToDo
+vars-data
 
 /home/seaman/Projects/jack-hammer/logs:
 user
@@ -71,3 +81,5 @@ src.correct
 src.tst
 update.correct
 update.tst
+vars.correct
+vars.tst

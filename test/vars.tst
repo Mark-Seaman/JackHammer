@@ -3,13 +3,7 @@
 
 var-clear
 var-set pipe-num 50
-
-inc-pipe-num
-inc-pipe-num 2
-inc-pipe-num 3
-
-var-get  pipe-num
-
+var-get pipe-num
 var-list
 
 
