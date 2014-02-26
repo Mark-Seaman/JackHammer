@@ -6,6 +6,7 @@ from re         import compile, IGNORECASE, DOTALL
 
 from wiki  import *
 from tabs  import print_tab_doc
+from files import read_input, read_text, write_file, is_writable
 
 
 # Log the page hit in page.log  (time, ip, user, page, doc) 
@@ -26,6 +27,11 @@ def domain_map():
     return map
 
 
+# Create a path from the dir parts
+def make_path(parts):
+    return '/'.join(parts)
+
+
 # Convert a url to a directory
 def doc_path(path):
     m = domain_map()
@@ -41,8 +47,15 @@ def doc_path(path):
     else:
         user = 'Public'
 
-    file = path[2:]
-    return '/'.join([user,domain] + file).replace('/./','/')
+    parts = [user,domain] + path[2:]
+    return make_path(parts)
+
+
+# Convert a url to a directory
+def public_doc_path(path):
+    path = doc_path(path.split('/'))
+    path[1] = 'Public'
+    return doc_path(path)
 
 
 # Return the new url to visit  (Implied path host/user/doc)
@@ -64,15 +77,13 @@ def doc_redirect (url):
     doc = map_doc_path(url)
     if exists(doc):
         if not isfile(doc):
-            #print 'DOCDIR='+doc
             index = join(doc,'Index')
             if exists(index):
-                #print 'INDEX='+index
-                print redirect_path(url) + '/Index'
+                return redirect_path(url) + '/Index'
             else:
-                print redirect_path(url) + '/Index/missing'
+                return redirect_path(url) + '/Index/missing'
     else:
-        print redirect_path(url) + '/missing' 
+        return redirect_path(url) + '/missing' 
 
 
 # Either format the doc or return the redirect page
@@ -80,3 +91,17 @@ def show_domain_doc(url):
     doc = map_doc_path(url)
     if exists(doc) and isfile(doc):
         print_tab_doc(doc)
+
+
+# Put the document text in storage
+def put_domain_doc(doc):
+    write_file(map_doc_path(doc), read_input())
+
+
+# Get the document text from storage
+def get_domain_doc(doc):
+    if not doc_redirect(doc):
+        print read_text(map_doc_path(doc))
+    else:
+        print "redirect:%s/missing" % doc_redirect(doc)
+
