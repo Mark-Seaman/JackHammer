@@ -108,11 +108,13 @@ def test_web_page(host,page):
 def test_web_pages(host,pages):
     global browser
     browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+
     try:
-        browser.implicitly_wait(5)
-        for page in pages:
-            print host, page
-            test_web_page(host,page)
+       browser.implicitly_wait(5)
+       for page in pages:
+           print host+'/'+page
+           test_web_page(host,page)
     except:
         print 'Test web pages failed'
 
