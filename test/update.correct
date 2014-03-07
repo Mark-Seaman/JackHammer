@@ -1,5 +1,4 @@
 diff bin/project /home/seaman/Documents/bin/project
 diff bin/src /home/seaman/Documents/bin/src
 diff bin/todo /home/seaman/Documents/bin/todo
-diff bin/util/doc.py /home/seaman/Documents/bin/util/doc.py
 diff test/content.tst /home/seaman/Documents/test/content.tst
