@@ -24,36 +24,50 @@ def group_tabs(text):
     return results
 
 
-# Print one tab of text
-def print_tab(text):
+# Format one tab of text
+def format_tab(text):
+    results = ''
     lines   = text.split('\n')
     heading = lines[0]
     body    = lines[1:]
-    print '     <tab heading="%s">'%heading
-    print '        <div class="page">'
-    print '        <b>'+heading+'</b>'
-    print convert_html(body)
-    print '        </div>'
-    print '     </tab>'
+    results += '     <tab heading="%s">\n'%heading
+    results +=  '        <div class="page">\n'
+    results +=  '        <b>'+heading+'</b>\n'
+    results +=  convert_html(body)
+    results +=  '        </div>\n'
+    results +=  '     </tab>\n'
+    return results
+
+
+# Print all the tabs of text from the file
+def format_tabs(text):
+    results = ''
+    tab_groups = group_tabs(text)
+    tabs = text.split('**')
+    body = tabs[0].split('\n')
+    results += convert_html(body)
+    if len(tab_groups)>1:
+        results += '<div ng-controller="TabbedViewCtrl">\n'
+        results += '  <tabset ng-show="true">\n'
+        for g in tab_groups:
+            results += format_tab(g)
+        results += '  </tabset>\n'
+        results += '</div>\n'
+    return results
+
+
+# Print one tab of text
+def print_tab(text):
+    print format_tab(text)
 
 
 # Print all the tabs of text from the file
 def print_all_tabs(text):
-    tab_groups = group_tabs(text)
-    tabs = text.split('**')
-    body = tabs[0].split('\n')
-    print convert_html(body)
-    if len(tab_groups)>1:
-        print '<div ng-controller="TabbedViewCtrl">'
-        print '  <tabset ng-show="true">'
-        for g in tab_groups:
-            print_tab(g)
-        print '  </tabset>'
-        print '</div>'
+    print format_tabs(text)
 
 
 #  Formatter to add tabs to the HTML formatting
-def print_tab_doc(f):
-    text = read_text(f)
-    text = format_widgets(f,text)
-    print_all_tabs(text)
+def format_doc(filename):
+    text = read_text(filename)
+    text = format_widgets(filename,text)
+    return format_tabs(text)

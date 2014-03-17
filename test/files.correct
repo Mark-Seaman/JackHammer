@@ -16,9 +16,6 @@ commit
 create
 doc-diff-all
 doc-get
-doc-page
-doc-page-get
-doc-page-put
 doc-pull
 doc-push
 doc-put
@@ -29,7 +26,10 @@ elapsed
 filter-path
 lc
 mkexe
+page-get
 page-grab
+page-put
+page-show
 project
 range
 rbg
