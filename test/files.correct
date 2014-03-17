@@ -78,6 +78,8 @@ files.correct
 files.tst
 git.correct
 git.tst
+projects.correct
+projects.tst
 src.correct
 src.tst
 update.correct
