@@ -34,6 +34,7 @@ bin/src
 bin/tdiff
 bin/te
 bin/tfail
+bin/tfix
 bin/tlike
 bin/tlist
 bin/tmklike
