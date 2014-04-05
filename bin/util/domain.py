@@ -9,14 +9,6 @@ from tabs  import format_tabs, format_doc
 from files import read_input, read_text, write_file, is_writable
 
 
-# Log the page hit in page.log  (time, ip, user, page, doc) 
-def log_page(doc):
-    logFile=environ['p']+'/logs/user/doc.log'
-    f=open(logFile,'a')
-    f.write(str(datetime.now())+',  '+doc+'\n')
-    f.close()
-
-
 # Read the domain mapping from a file
 def domain_map():
     map = {}
@@ -30,7 +22,7 @@ def domain_map():
 # Map the domain to a document directory
 def domain_directory(domain):
     m = domain_map()
-    if m.has_key(domain):
+    if m.has_key(domain) and m[domain]!='.':
         return m[domain]
 
 
@@ -63,7 +55,6 @@ def redirect_path(doc):
 # lookup the path for the doc for this url
 def map_doc_path(url):
     doc = doc_path(url.split('/'))
-    log_page(doc)
     return join(environ['pd'], doc)
 
 

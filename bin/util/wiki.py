@@ -35,7 +35,7 @@ def preserve_spaces(line):
 
 # Break lines for <space> at beginning
 def space_breaks(line):
-    always_break = False
+    always_break = True
     if always_break or (len(line)>0 and line[0]==' '):
         return  '<br/> '+line
     return line
@@ -100,6 +100,7 @@ def convert_links(text1):
 
 # Convert a single text line to html
 def convert_line(line):
+    line = line.decode('utf-8').encode('ascii', 'ignore')
     line = remove_muse(line).rstrip()
     line = space_breaks(line)
     line = format_rules(line)

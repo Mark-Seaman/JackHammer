@@ -26,9 +26,12 @@ elapsed
 filter-path
 lc
 mkexe
+page
 page-get
 page-grab
+page-log
 page-put
+page-redirect
 page-show
 project
 range
