@@ -1,12 +1,14 @@
 Remove automatically saved files from this directory tree
 Git orig files
 Git libpeerconnection files
+/home/seaman/Projects/jack-hammer/profile
 /home/seaman/Projects/jack-hammer/README.md
 
 /home/seaman/Projects/jack-hammer:
 bin
 doc
 logs
+profile
 README.md
 test
 
@@ -85,6 +87,7 @@ projects.correct
 projects.tst
 src.correct
 src.tst
+table.tst
 update.correct
 update.tst
 vars.correct
