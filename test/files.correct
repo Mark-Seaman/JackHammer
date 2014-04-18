@@ -88,7 +88,6 @@ projects.correct
 projects.tst
 src.correct
 src.tst
-table.tst
 update.correct
 update.tst
 vars.correct

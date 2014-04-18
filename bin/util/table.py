@@ -1,7 +1,33 @@
 
 #!/usr/bin/python
 from date import date_str,to_date
+from csv import writer, reader
+
 from files    import write_file
+
+
+#############################################################################
+# CSV files
+
+
+# Export a list of lists to a text file
+def export_csv (csvfile,table):
+    with open(csvfile, 'w') as f:
+        w = writer(f)
+        for row in table:
+            w.writerow(row)
+
+# Import rows of text and make a list of lists
+def import_csv(csvfile):
+    with open(csvfile) as f:
+        return [ x for x in reader(f) ]
+
+# Convert strings to ints
+def int_row(row):
+    return map(int, row)
+
+def int_table(table):
+    return map(int_row, table)
 
 #############################################################################
 # Query tables

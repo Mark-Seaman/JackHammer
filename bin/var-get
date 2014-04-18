@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Set a variable
+# Get a variable
 
 from sys  import argv
 from util.vars import lookup

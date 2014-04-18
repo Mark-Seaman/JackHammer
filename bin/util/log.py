@@ -18,9 +18,18 @@ def append_log(doc, filename='page'):
     f.close()
 
 
+# Log the page hit in page.log  (time, ip, user, page, doc) 
+def log_page(request,title=None):
+    if not request or request.user.is_anonymous():
+         append_log('Anonymous '+str(title))
+    else:
+         append_log(request.user.username+' '+str(title))
+
+
 # Get the contents of a log file
 def show_log(filename='page'):
     return read_text(log_file(filename))
+
 
 # Get the contents of a log file
 def list_logs():
@@ -29,6 +38,7 @@ def list_logs():
         f = f.replace('.log','')
         log = show_log(f)
         print len(log.split('\n')), log_file(f)
+
 
 # Get the contents of a log file
 def clear_logs():
