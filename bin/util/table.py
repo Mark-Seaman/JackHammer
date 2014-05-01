@@ -1,9 +1,8 @@
+#!/usr/bin/env python
+from date  import date_str,to_date
+from csv   import writer, reader
 
-#!/usr/bin/python
-from date import date_str,to_date
-from csv import writer, reader
-
-from files    import write_file
+from files import write_file
 
 
 # Create some imaginary data to work with
@@ -13,7 +12,6 @@ def create_data(num_rows=10, num_columns=10):
 
 #############################################################################
 # CSV files
-
 
 # Export a list of lists to a text file
 def export_csv (csvfile,table):
