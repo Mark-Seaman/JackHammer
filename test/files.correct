@@ -7,6 +7,7 @@ Git libpeerconnection files
 /home/seaman/Projects/jack-hammer:
 bin
 doc
+env
 logs
 profile
 README.md
@@ -72,6 +73,12 @@ test
 ToDo
 vars-data
 
+/home/seaman/Projects/jack-hammer/env:
+bin
+include
+lib
+local
+
 /home/seaman/Projects/jack-hammer/logs:
 user
 
@@ -88,6 +95,8 @@ projects.correct
 projects.tst
 src.correct
 src.tst
+tablerw.correct
+tablerw.tst
 update.correct
 update.tst
 vars.correct

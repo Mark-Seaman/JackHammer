@@ -54,9 +54,10 @@ bin/util/list.py
 bin/util/local_settings.py
 bin/util/log.py
 bin/util/page.py
-bin/util/page_test.py
+bin/util/pages.py
 bin/util/table.py
 bin/util/tabs.py
+bin/util/test_table.py
 bin/util/vars.py
 bin/util/widgets.py
 bin/util/wiki.py
@@ -73,5 +74,6 @@ test/files.tst
 test/git.tst
 test/projects.tst
 test/src.tst
+test/tablerw.tst
 test/update.tst
 test/vars.tst
