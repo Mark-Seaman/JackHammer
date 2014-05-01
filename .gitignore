@@ -10,6 +10,7 @@ lib-cov
 *.pyc
 *.seed
 *~
+env
 node_modules
 pids
 logs

@@ -6,6 +6,11 @@ from csv import writer, reader
 from files    import write_file
 
 
+# Create some imaginary data to work with
+def create_data(num_rows=10, num_columns=10):
+    return [ [ 0+c+row*100 for c in range(num_columns) ]+[ row ] for row in range(num_rows) ]
+
+
 #############################################################################
 # CSV files
 
