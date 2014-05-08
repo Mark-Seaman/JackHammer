@@ -27,6 +27,7 @@ doc-show
 e
 elapsed
 filter-path
+install.pip
 lc
 mkexe
 page
@@ -36,6 +37,7 @@ page-log
 page-put
 page-redirect
 page-show
+pi
 project
 range
 rbg
@@ -61,6 +63,7 @@ var-read
 var-save
 var-set
 var-write
+welcome
 
 /home/seaman/Projects/jack-hammer/doc:
 AutomatedTests
@@ -93,10 +96,10 @@ git.correct
 git.tst
 projects.correct
 projects.tst
+python.correct
+python.tst
 src.correct
 src.tst
-tablerw.correct
-tablerw.tst
 update.correct
 update.tst
 vars.correct
