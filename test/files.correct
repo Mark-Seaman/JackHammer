@@ -18,6 +18,7 @@ cache
 commit
 create
 doc-diff-all
+doc-edit
 doc-get
 doc-pull
 doc-push
@@ -29,6 +30,8 @@ elapsed
 filter-path
 install.pip
 lc
+mkdoc
+mkdocapp
 mkexe
 page
 page-get
