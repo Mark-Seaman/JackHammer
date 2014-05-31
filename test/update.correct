@@ -2,4 +2,6 @@ diff bin/install.pip /home/seaman/Documents/bin/install.pip
 diff bin/project /home/seaman/Documents/bin/project
 diff bin/src /home/seaman/Documents/bin/src
 diff bin/todo /home/seaman/Documents/bin/todo
+diff bin/util /home/seaman/Documents/bin/util
 diff test/content.tst /home/seaman/Documents/test/content.tst
+diff test/python.tst /home/seaman/Documents/test/python.tst
