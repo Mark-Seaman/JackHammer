@@ -1,6 +1,7 @@
 angular-hammer
 archive
 book-code
+brain
 celery
 django-hammer
 impact
@@ -14,3 +15,4 @@ Receipts
 Secure.zip.gpg
 thumper
 tricks
+wme
