@@ -30,7 +30,7 @@ alias tres='tresults'
 alias s='search'
 
 # Path
-export _OLD_VIRTUAL_PATH=\
+export PATH=\
 $pb:\
 $pt:\
 /usr/bin:\
@@ -38,19 +38,18 @@ $pt:\
 /bin:\
 ~/bin:\
 .
+export _OLD_VIRTUAL_PATH=$PATH
 
-# Directory
-cd $p
-
-# Show the banner
-figlet 'Jack Hammer'
+# Welcome
+$pb/welcome
 
 # Use virtualenv
-[ 'seaman-chute' == `hostname` ] &&  . $p/env/bin/activate
+[ -f $p/env/bin/activate ] && . $p/env/bin/activate
 echo "python = `which python`"
 echo 
 path
 
-# Status
+# Directory
+cd $p
 git status
 
