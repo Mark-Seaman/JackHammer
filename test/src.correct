@@ -48,7 +48,6 @@ bin/tresults
 bin/trun
 bin/tshow
 bin/tst
-bin/util
 bin/util/date.py
 bin/util/doc.py
 bin/util/domain.py
