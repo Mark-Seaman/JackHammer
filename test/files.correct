@@ -55,6 +55,7 @@ tlist
 tnew
 todo
 tresults
+trm
 trun
 tshow
 tst
@@ -92,6 +93,8 @@ user
 /home/seaman/Projects/jack-hammer/test:
 content.correct
 content.tst
+control.correct
+control.tst
 docs.correct
 docs.tst
 files.correct
@@ -106,5 +109,3 @@ src.correct
 src.tst
 update.correct
 update.tst
-vars.correct
-vars.tst
