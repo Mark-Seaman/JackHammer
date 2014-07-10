@@ -3,4 +3,5 @@
 
 # Run nose to test python code
 cd $pb
-nosetests
+nosetests 2>/dev/null
+
