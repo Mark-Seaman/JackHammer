@@ -45,9 +45,11 @@ bin/tnew
 bin/todo
 bin/tout
 bin/tresults
+bin/trm
 bin/trun
 bin/tshow
 bin/tst
+bin/util/control.py
 bin/util/date.py
 bin/util/doc.py
 bin/util/domain.py
@@ -73,6 +75,7 @@ bin/var-set
 bin/var-write
 bin/welcome
 test/content.tst
+test/control.tst
 test/docs.tst
 test/files.tst
 test/git.tst
@@ -80,4 +83,3 @@ test/projects.tst
 test/python.tst
 test/src.tst
 test/update.tst
-test/vars.tst
