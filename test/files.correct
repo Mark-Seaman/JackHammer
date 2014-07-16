@@ -87,6 +87,7 @@ lib
 local
 
 /home/seaman/Projects/jack-hammer/logs:
+python.tst.log
 user
 
 /home/seaman/Projects/jack-hammer/test:
