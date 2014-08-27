@@ -4,4 +4,5 @@ diff bin/src /home/seaman/Documents/bin/src
 diff bin/todo /home/seaman/Documents/bin/todo
 diff bin/welcome /home/seaman/Documents/bin/welcome
 diff test/content.tst /home/seaman/Documents/test/content.tst
+diff test/src.tst /home/seaman/Documents/test/src.tst
 Missing /home/seaman/Documents/test/update.tst
