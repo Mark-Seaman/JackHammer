@@ -1,10 +1,8 @@
-Remove automatically saved files from this directory tree
-Git orig files
-Git libpeerconnection files
-/home/seaman/Projects/jack-hammer/profile
-/home/seaman/Projects/jack-hammer/README.md
+Projects/jack-hammer/profile
+Projects/jack-hammer/README.md
 
-/home/seaman/Projects/jack-hammer:
+Projects/jack-hammer:
+app
 bin
 doc
 env
@@ -13,7 +11,10 @@ profile
 README.md
 test
 
-/home/seaman/Projects/jack-hammer/bin:
+Projects/jack-hammer/app:
+user_doc
+
+Projects/jack-hammer/bin:
 cache
 commit
 create
@@ -69,7 +70,7 @@ var-set
 var-write
 welcome
 
-/home/seaman/Projects/jack-hammer/doc:
+Projects/jack-hammer/doc:
 AutomatedTests
 Domains
 Index
@@ -80,17 +81,17 @@ test
 ToDo
 vars-data
 
-/home/seaman/Projects/jack-hammer/env:
+Projects/jack-hammer/env:
 bin
 include
 lib
 local
 
-/home/seaman/Projects/jack-hammer/logs:
+Projects/jack-hammer/logs:
 python.tst.log
 user
 
-/home/seaman/Projects/jack-hammer/test:
+Projects/jack-hammer/test:
 content.correct
 content.tst
 control.correct
