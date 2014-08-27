@@ -60,6 +60,7 @@ bin/util/local_settings.py
 bin/util/log.py
 bin/util/page.py
 bin/util/pages.py
+bin/util/settings.py
 bin/util/table.py
 bin/util/tabs.py
 bin/util/test_table.py

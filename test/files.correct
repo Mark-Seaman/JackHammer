@@ -88,6 +88,7 @@ lib
 local
 
 Projects/jack-hammer/logs:
+docs.log
 python.tst.log
 user
 
