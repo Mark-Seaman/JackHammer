@@ -5,10 +5,5 @@
 cd $p
 find bin  -type f | grep -v '.pyc'
 find test -type f -name '*.tst' 
-find app  -type f -name '*.py'
-find app  -type f -name '*.html' | grep -v UI
-ls app/static/*.js  | grep -v 'bootstrap'
-ls app/static/*.css | grep -v 'bootstrap'
-
 } | sort
 
