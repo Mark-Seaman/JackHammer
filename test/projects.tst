@@ -1,5 +1,6 @@
 #!/bin/bash
 # Projects list
 
-ls ~/Projects
+[ `hostname` != production.impact.com ] && ls ~/Projects && exit 0
 
+cat $pt/projects.correct
