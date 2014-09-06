@@ -1,19 +1,12 @@
 #!/bin/bash
 # Start working on the simple project
 
-#      _            _      _   _                                     
-#     | | __ _  ___| | __ | | | | __ _ _ __ ___  _ __ ___   ___ _ __ 
-#  _  | |/ _` |/ __| |/ / | |_| |/ _` | '_ ` _ \| '_ ` _ \ / _ \ '__|
-# | |_| | (_| | (__|   <  |  _  | (_| | | | | | | | | | | |  __/ |   
-#  \___/ \__,_|\___|_|\_\ |_| |_|\__,_|_| |_| |_|_| |_| |_|\___|_|   
-                                                                   
-
 # Vars
 export p=~/Projects/jack-hammer
 export ph=$joy
 export pa=$p/app
 export pb=$p/bin
-export pd=$p/doc
+export pd=$p/app/user_doc
 export pt=$p/test
 
 # Aliases
@@ -41,7 +34,7 @@ $pt:\
 export _OLD_VIRTUAL_PATH=$PATH
 
 # Welcome
-$pb/welcome
+cat $pb/welcome
 
 # Use virtualenv
 [ -f $p/env/bin/activate ] && . $p/env/bin/activate
