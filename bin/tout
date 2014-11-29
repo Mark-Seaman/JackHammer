@@ -1,8 +1,7 @@
-#!/bin/bash
-# Show the results from the test that was run
+#!/usr/bin/env python
+# Accept the currect results as the correct answer
 
-f=${1/\.tst/}
-[ ! -x $f.tst ]  && cd $p/test 
-[ -f $f.out     ] && cat $f.out && exit 0
-[ -f $pt/$f.out ] && cat $f.out && exit 0
-echo "No file found: $f.out"
+from sys import argv
+from util.systest import output
+
+print 'Test Output:', argv[1], output (argv[1])
