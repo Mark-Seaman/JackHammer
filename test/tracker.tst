@@ -1,1 +1,1 @@
-tpyrun /home/seaman/Projects/jack-hammer/bin/util/tracker_test 
+tpyrun $p/bin/util/tracker_test 

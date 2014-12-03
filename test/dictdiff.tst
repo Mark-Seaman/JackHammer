@@ -1,1 +1,1 @@
-tpyrun /home/seaman/Projects/jack-hammer/bin/util/dictdiff_test 
+tpyrun $p/bin/util/dictdiff_test 

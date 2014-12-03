@@ -161,7 +161,7 @@ def reset_cache():
 
 # Create one tst file to execute nose on a py file
 def create_test(t):
-    code = 'tpyrun '+t.replace(environ['pt'],'$pt')+' \n'
+    code = 'tpyrun '+t.replace(environ['p'],'$p')+' \n'
     test = join(environ['pt'],basename(t.replace('_test',''))+'.tst')
     f = open(test,'w')
     f.write(code)

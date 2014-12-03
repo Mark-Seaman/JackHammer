@@ -1,1 +1,1 @@
-tpyrun /home/seaman/Projects/jack-hammer/bin/util/pages_test 
+tpyrun $p/bin/util/pages_test 
