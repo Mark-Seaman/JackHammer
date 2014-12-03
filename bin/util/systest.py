@@ -6,8 +6,9 @@ from genericpath import exists
 from os.path  import join, isfile, splitext, basename
 from os       import system, environ, chmod
 from glob     import glob
+from socket   import gethostname
 
-from files import do_command, write_file, read_file
+from files import do_command, write_file, read_text
 from store import save, recall, expire, expiration
 from diff  import diff_string
 
@@ -77,8 +78,18 @@ def output(testname):
 
 # Lookup the correct output for the test
 def correct(testname):
-    return recall(tname(testname)+'.correct')
-    
+    correct_text = recall(tname(testname)+'.correct')
+    if correct_text:
+        write_file(join(environ['pt'],gethostname(),testname), [correct_text])
+    return correct_text
+
+
+# Correct load from Git repo
+def correct_load(testname, host):
+    correct_text = read_text(join(environ['pt'],host,testname))[:-1]
+    save(tname(testname)+'.correct', correct_text)
+
+
 
 # Accept these test results        
 def like(testname):
@@ -150,8 +161,8 @@ def reset_cache():
 
 # Create one tst file to execute nose on a py file
 def create_test(t):
-    code = 'tpyrun '+t+' \n'
-    test = join(environ['pt'],basename(t)+'.tst')
+    code = 'tpyrun '+t.replace(environ['pt'],'$pt')+' \n'
+    test = join(environ['pt'],basename(t.replace('_test',''))+'.tst')
     f = open(test,'w')
     f.write(code)
     f.close()
