@@ -1,0 +1,7 @@
+/home/seaman/Projects/jack-hammer/bin/util
+nosetests -v pages_test.py
+util.pages_test.selenium_page_test ... ok
+
+----------------------------------------------------------------------
+
+OK

@@ -1,0 +1,7 @@
+/home/seaman/Projects/jack-hammer/bin/util
+nosetests -v selenium2_test.py
+util.selenium2_test.selenium_install_test ... ok
+
+----------------------------------------------------------------------
+
+OK
