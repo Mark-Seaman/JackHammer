@@ -50,6 +50,7 @@ rmas
 search
 show
 src
+tcorrect
 te
 tfail
 tfix
@@ -107,6 +108,7 @@ git.correct
 git.tst
 projects.correct
 projects.tst
+seaman-hammer
 src.correct
 src.tst
 update.correct
