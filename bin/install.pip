@@ -8,6 +8,3 @@ pip install django-extensions
 pip install pillow
 pip install boto django-ses
 pip install selenium
-
-pip install djangorestframework
-pip install django_ses
