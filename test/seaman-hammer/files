@@ -109,6 +109,7 @@ redis.tst
 seaman-hammer
 selenium2.tst
 selenium.tst
+settings.tst
 src.correct
 src.tst
 store.tst
