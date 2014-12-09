@@ -64,13 +64,6 @@ trun
 tshow
 tst
 util
-var-clear
-var-get
-var-list
-var-read
-var-save
-var-set
-var-write
 welcome
 
 Projects/jack-hammer/doc:
