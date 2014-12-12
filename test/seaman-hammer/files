@@ -48,6 +48,9 @@ range
 rbg
 rmas
 search
+selenium-pages
+selenium-phantomjs-start
+selenium-phantomjs-stop
 show
 src
 tcorrect
@@ -82,6 +85,7 @@ bin
 include
 lib
 local
+man
 
 Projects/jack-hammer/logs:
 docs.log
@@ -107,7 +111,6 @@ projects.correct
 projects.tst
 redis.tst
 seaman-hammer
-selenium2.tst
 selenium.tst
 settings.tst
 src.correct
