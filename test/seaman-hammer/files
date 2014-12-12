@@ -111,7 +111,6 @@ projects.correct
 projects.tst
 redis.tst
 seaman-hammer
-selenium.tst
 settings.tst
 src.correct
 src.tst
