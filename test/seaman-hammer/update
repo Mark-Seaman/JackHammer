@@ -1,10 +1,15 @@
 diff bin/install.pip /home/seaman/Documents/bin/install.pip
 diff bin/project /home/seaman/Documents/bin/project
 diff bin/src /home/seaman/Documents/bin/src
+diff bin/tfail /home/seaman/Documents/bin/tfail
+Missing /home/seaman/Documents/bin/tpe
+Missing /home/seaman/Documents/bin/tpnew
 diff bin/welcome /home/seaman/Documents/bin/welcome
+Missing /home/seaman/Documents/bin/workflow
 Missing /home/seaman/Documents/test/content.tst
 diff test/docs.tst /home/seaman/Documents/test/docs.tst
 diff test/files.tst /home/seaman/Documents/test/files.tst
 diff test/projects.tst /home/seaman/Documents/test/projects.tst
 diff test/src.tst /home/seaman/Documents/test/src.tst
 Missing /home/seaman/Documents/test/update.tst
+Missing /home/seaman/Documents/test/workflow.tst
