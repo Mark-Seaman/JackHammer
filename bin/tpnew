@@ -1,0 +1,40 @@
+#!/usr/bin/env python
+# Build new python test script
+
+from os       import system, environ, chmod
+from os.path  import join, isfile, splitext, basename
+
+
+# Code template for a python test
+code = '''#!/usr/bin/env python
+# Build new python test script
+
+from os       import system
+
+
+def %s_test():
+    system ('echo %s')
+    '''
+
+
+# Create one tst file to execute nose on a py file
+def create_python_test(t):
+    test_name = basename(t)
+    text = code%(test_name,test_name)
+    test = join(environ['pt'],basename(t)+'_test.py')
+    f = open(test,'w')
+    f.write(text)
+    f.close()
+    chmod (test, 0755)
+    #print 'Create %-40s \n   %s'%(test,code)
+
+
+# Create the test file and edit it
+def write_test(testname):
+    print "Build new python test script"
+    create_python_test('test/%s'%testname)
+    system ('e test/%s_test.py'%testname)
+
+
+if __name__ == "__main__":
+    write_test('workflow')
