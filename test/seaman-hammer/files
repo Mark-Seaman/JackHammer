@@ -60,6 +60,8 @@ tfix
 tlist
 tnew
 todo
+tpe
+tpnew
 tpyrun
 tresults
 trm
@@ -68,6 +70,7 @@ tshow
 tst
 util
 welcome
+workflow
 
 Projects/jack-hammer/doc:
 AutomatedTests
@@ -107,10 +110,12 @@ git.tst
 markdown.tst
 pages
 pages.tst
+projects
 projects.correct
 projects.tst
 redis.tst
 seaman-hammer
+seaman-ultra
 settings.tst
 src.correct
 src.tst
@@ -119,3 +124,5 @@ table.tst
 tracker.tst
 update.correct
 update.tst
+workflow_test.py
+workflow.tst
