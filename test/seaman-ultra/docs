@@ -665,8 +665,6 @@
 ./seaman
 ./seaman/BizPlan
 ./seaman/BizPlan/AppThumper
-./seaman/BizPlan/AppThumper/EventData
-./seaman/BizPlan/AppThumper/EventViews
 ./seaman/BizPlan/AppThumper/History
 ./seaman/BizPlan/AppThumper/History/2013-02
 ./seaman/BizPlan/AppThumper/History/2013-03
@@ -688,12 +686,6 @@
 ./seaman/BizPlan/AppThumper/History/2014-07
 ./seaman/BizPlan/AppThumper/History/2014-08
 ./seaman/BizPlan/AppThumper/History/Index
-./seaman/BizPlan/AppThumper/Index
-./seaman/BizPlan/AppThumper/Security
-./seaman/BizPlan/AppThumper/TestStrategy
-./seaman/BizPlan/AppThumper/Time
-./seaman/BizPlan/AppThumper/ViewArchitecture
-./seaman/BizPlan/AppThumper/Views
 ./seaman/BizPlan/Build
 ./seaman/BizPlan/Focus
 ./seaman/BizPlan/History
@@ -891,8 +883,6 @@
 ./seaman/MyPlan/Fun/Movies
 ./seaman/MyPlan/Fun/Music
 ./seaman/MyPlan/Fun/Restaurants
-./seaman/MyPlan/Fun/Travel
-./seaman/MyPlan/Fun/TV
 ./seaman/MyPlan/Grow
 ./seaman/MyPlan/Grow/12Weeks
 ./seaman/MyPlan/Grow/Beliefs
