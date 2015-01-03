@@ -1,4 +1,3 @@
-/home/seaman/Projects/jack-hammer/test
 nosetests -v workflow_test.py
 Work flow today
 Learn: update your list of things to learn

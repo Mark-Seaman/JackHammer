@@ -1,23 +1,6 @@
-/home/seaman/Projects/jack-hammer/bin/util
 nosetests -v pages_test.py
-util.pages_test.selenium_page_test ... ERROR
-
-======================================================================
-ERROR: util.pages_test.selenium_page_test
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "/usr/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest
-    self.test(*self.arg)
-  File "/home/seaman/Projects/jack-hammer/bin/util/pages_test.py", line 43, in selenium_page_test
-    from pages import test_web_pages
-  File "/home/seaman/Projects/jack-hammer/bin/util/pages.py", line 9, in <module>
-    from selenium import webdriver
-ImportError: No module named selenium
--------------------- >> begin captured stdout << ---------------------
-Phantom JS DISPLAY on 
-
---------------------- >> end captured stdout << ----------------------
+util.pages_test.selenium_page_test ... ok
 
 ----------------------------------------------------------------------
 
-FAILED (errors=1)
+OK
