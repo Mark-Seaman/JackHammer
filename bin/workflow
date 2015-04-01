@@ -2,17 +2,52 @@
 # Work flow manager
 
 
-from os       import system
+from os  import system
+from sys import argv
+from util.store import save,recall
 
 
-def workflow():
-    print "Work flow today"
-    print 'Learn:', 'update your list of things to learn'
-    print 'Plan:', 'choose a single task that will make your job easier'
-    print 'Build:', 'build a tool that will build another tool'
-    print 'Teach:', 'share your most useful tool'
+objects = {}
+
+
+def store(object,name,value):
+    save(object+'/'+name, value)
+
+
+def lookup(object,name):
+    return recall(object+'/'+name)
+
+
+def workflow(parms):
+
+    if len(parms)==0:
+        print 'List: All available objects\n'
+        return
+
+    if len(parms)<2:
+        print 'List:', parms[0], ':', recall(parms[0]), '\n'
+        return
+
+    value =  ' '.join(parms[2:])
+    if parms[1]=='-a':
+        print 'Add', parms[0], value
+        store(parms[0],value,value)
+        print  'Add', parms[0], ':', lookup(parms[0],value),'\n'
+        return
+
+    if parms[1]=='-d':
+        print 'Delete', parms[0], ':', value
+        save(parms[0],'')
+        print 'Delete', parms[0], ':', lookup(parms[0],value),'\n'
+        return
+
+    print 'PARMS:',parms
+    print 'recall:', lookup(parms[0],value)
 
     
 if __name__ == "__main__":
-    workflow()
+    if len(argv)>1:
+            workflow(argv[1:])
+    else:
+        workflow([])
 
