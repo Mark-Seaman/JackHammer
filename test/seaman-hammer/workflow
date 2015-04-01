@@ -1,9 +1,6 @@
 nosetests -v workflow_test.py
-Work flow today
-Learn: update your list of things to learn
-Plan: choose a single task that will make your job easier
-Build: build a tool that will build another tool
-Teach: share your most useful tool
+List: All available objects
+
 workflow_test.workflow_test ... ok
 
 ----------------------------------------------------------------------
